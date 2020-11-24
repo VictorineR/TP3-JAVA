@@ -15,14 +15,14 @@ public class GenericStack<T> {
     //Method
     public void push(T element){
         Stack.add(element);
+        this.top ++;
     }
 
     public void pop(){
         if (Stack.isEmpty()){
              throw new EmptyStackException();
-        }
-        while (top !=0){
-            this.Stack.remove(this.top);
+        } else{
+            this.Stack.remove(this.top+1);
             this.top --;
         }
     }
