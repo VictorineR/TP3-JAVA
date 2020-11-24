@@ -14,12 +14,12 @@ public class Main {
 
     public static void ex2(){
         ArrayList<String> list = new ArrayList<String>();
-        list.add("Bonjour");
-        list.add("Au revoir");
+        list.add("A");
+        list.add("B");
         GenericStack<String> stack = new GenericStack<>(list, 1);
         System.out.println("Your stack:" + list);
 
-        stack.push("Hello");
+        stack.push("C");
         System.out.println("Your stack:" + list);
 
         try{
@@ -32,20 +32,24 @@ public class Main {
 
         System.out.println("Size of the stack: " +stack.sizeStack());
 
-        stack.addTo(stack, "cookie");
+        stack.addTo(stack, "D");
         System.out.println("Your stack:" + list);
     }
 
     public static void ex3(){
-
+        System.out.println("?????");
 
     }
 
+    public static void ex4(){
+        
+    }
 
     public static void main(String[] args) {
         //ex1();
         //ex2();
-        ex3();
+        //ex3();
+        ex4();
 
     }
 }

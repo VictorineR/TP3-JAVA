@@ -12,7 +12,6 @@ public class GenericStack<T> {
         this.top = top;
     }
 
-
     //Method
     public void push(T element){
         Stack.add(element);
